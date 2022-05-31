@@ -1,0 +1,208 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="img/icono.ico">
+        <!-- inicio tiporafia de google  -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Kalam:wght@300;400&family=Satisfy&display=swap" rel="stylesheet">
+        <!-- fin tipografia de google -->
+        <!-- inicio fuentes iconos google -->
+        <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,300,0,0" />
+        <!--  fin fuentes iconos google -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">  <!-- usa el ancho del que dispone la página se usa para responsive-->
+    <meta name="description" content="recetas de cocina practica"> 
+    <meta name="keywords" content="plantas, gree planet, biodiversidad">
+     <!--inicio estilos propios  -->
+    <link rel="stylesheet" href="css/estilo-index.css"> 
+    <link rel="stylesheet" href="css/estilo-tipos.css"> 
+    <!-- fin estilos propios -->
+    <title>Info-Bio</title>
+        <!-- inicio iconos fontawesome -->
+        <script src="https://kit.fontawesome.com/a058bff008.js" crossorigin="anonymous"></script>
+        <!-- fin iconos fontawesome -->
+        <!-- inicio menu hamburguesa -->
+        <script defer src="js/burger-menu.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" class="logoPagina" alt="logo hoja de helecho">
+        </div>
+        <nav id="btn-responsive"><a onclick="burger()"><span class="fa fa-bars logo"></span></a></nav>   <!-- onclick es un evento  que con un clik ejetuca la funcion burger del Js  -->
+        <nav id="btn-principal">
+            <ul id="btn-header">
+                <li><a href="index.html" onclick="plegado()">Inicio</a></li>
+                <li><a href="cuidados.html" onclick="plegado()">Cuidados</a></li>
+                <li><a href="tipos.html" onclick="plegado()">Plantas</a></li>
+                <li><a href="contacto.html" onclick="plegado()">Contactanos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="tit-tipos">
+        <div id="foto1" class="box-allimg">
+            <img src="img/planta1.png" class="img-ajuste-ancho" alt="planta en maceta blanca">
+        </div>
+        <div id="descripcion1" class="box-header">
+            <h4>Desubrí</h4>
+            <h1>La planta que más va con vos</h1> 
+            <h5>A la hora de tener plantas de interior, hay que tener en cuenta que tienen unas características particulares</h5>
+            <a href="#fotos-container"><button  type="button" class="boton1">Ver Galería</button></a>
+        </div>
+    </section>
+
+    <section class="tit-tipos">
+        <div class="box-header">
+            <h2>Plantas de Interior para Tener en Casa</h2>
+            <p>Existen innumerables tipos de plantas de interior, y en este artículo vamos a mostrar algunos de los más famosos y/o utilizados en el mundo. </p>
+            <p>Porque convivir con plantitas mejora la calidad de vida de las personas y ayuda a combatir el estrés.</p>
+        </div>
+        <div class="box-allimg">
+            <img src="img/planta2.png" class="img-ajuste-ancho" alt="plantas en diferentes macetas">
+        </div>
+    </section>
+
+    <section id="galeria-div">
+        <div id="fotos-container">
+            <div class="planta-box" id="f1">
+                <img src="img/pla3.jpg" class="img-cover" alt="planta Areca">
+                <div class="planta-title">
+                    <h3>Areca</h3>
+                    <h6>PLANTA HUMIFICADORA</h6>
+                </div>
+            </div>
+            <div class="planta-box" id="f2">
+                <img src="img/pla7.jpg" class="img-cover" alt="planta croton">
+                <div class="planta-title">
+                    <h3>Crotón</h3>
+                    <h6>PLANTA AROMÁTICA</h6>
+                </div>
+            </div>
+            <div class="planta-box" id="f3">
+                <img src="img/pla5.jpg" class="img-cover" alt="planta palo de agua">
+                <div class="planta-title">
+                    <h3>Palo de agua</h3>
+                    <h6>PLANTA PURIFICADORA</h6>
+                </div>
+            </div>
+            <div class="planta-box" id="f4">
+                <img src="img/pla4.jpg" class="img-cover" alt="planta Sansevieria">
+                <div class="planta-title">
+                    <h3>Sansevieria</h3>
+                    <h6>PLANTA PURIFICADORA</h6>
+                </div>
+            </div>
+            <div class="planta-box" id="f5">
+                <img src="img/pla12.jpg" class="img-cover" alt="plantas Suculentas">
+                <div class="planta-title">
+                    <h3>Suculentas</h3>
+                    <h6>PLANTA ALMACENADORA DE AGUA</h6>
+                </div>
+            </div>
+            <div class="planta-box" id="f6">
+                <img src="img/pla1.jpg" class="img-cover" alt="planta Cala">
+                <div class="planta-title">
+                    <h3>Cala</h3>
+                    <h6>PLANTA CON BULBO</h6>
+                </div>
+            </div>
+            <div class="planta-box" id="f7">
+                <img src="img/pla6.jpg" class="img-cover" alt="planta cola de Caballo">
+                <div class="planta-title">
+                    <h3>Cola de Caballo</h3>
+                    <h6>PLANTA MEDICINAL</h6>
+                </div>
+            </div>
+            <div class="planta-box" id="f8">
+                <img src="img/pla2.jpg" class="img-cover" alt="planta monstera">
+                <div class="planta-title">
+                    <h3>Monstera </h3>
+                    <h6>PLANTA TREPADORA</h6>
+                </div>
+            </div>
+            <div class="planta-box" id="f9">
+                <img src="img/pla10.jpg" class="img-cover" alt="planta Potus">
+                <div class="planta-title">
+                    <h3>Potus</h3>
+                    <h6>PLANTA COLGANTE</h6>
+                </div>
+            </div>
+            <div class="planta-box" id="f10">
+                <img src="img/pla13.jpg" class="img-cover" alt="planta col de Playa">
+                <div class="planta-title">
+                    <h3>Col de Playa</h3>
+                    <h6>PLANTA FRONDOSA</h6>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="mensaje-f">
+            <div>
+                <h2>#Donde HayAmor HayVida</h2>
+                <p>Pongamos de moda regalar plantas.</p>
+            </div>
+    </section>
+    
+    <footer>
+        <div id="container-footer">
+            <div class="box-footer" id="term">
+                <div class="logo2">
+                    <img src="img/logo2.png" alt="logo hojade otoño">
+                    <div class="terminos">
+                        <p>Cambia el mundo plantita a plantita. Plantemos un árbol y salvemos el planeta. Por un mundo mejor y más vivo.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box-footer">
+                <h5>Intereses</h5>
+                <a href="#"><p>Jardinería</p></a>
+                <a href="#"><p>Medio Ambiente</p></a>
+                <a href="#"><p>Biodegradable</p></a>
+                <a href="#"><p>Desarrollo Sustentable</p></a>
+            </div>
+            <div class="box-footer" id="contact">
+                <h5>Contactanos</h5>
+                <a href="#">
+                    <span class="material-symbols-outlined">location_city</span>
+                    <p>Street 777 Mar del Plata, Buenos Aires - Argentina</p>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">phone_iphone</span>
+                    <p>Mobile: -54 (9) 223-5585-555 <br> Phone: 01235 56789</p>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">mail</span>
+                    <p>Info-Bio@mail.com</p>
+                </a>
+            </div>
+            <div class="box-footer">
+                <h5>Redes Sociales</h5>
+                <a href="#">
+                    <span class="fa fa-facebook"></span>
+                    <p>Facebook</p>
+                </a>
+                <a href="#">
+                    <span class="fa fa-instagram"></span>
+                    <p>Instragram</p>
+                </a>
+                <a href="#">
+                    <span class="fa fa-twitter"></span>
+                    <p>Twitter</p>
+                </a>
+                <a href="#">
+                    <span class="fa fa-pinterest"></span>
+                    Pinterest
+                </a>
+            </div>
+        </div>
+        <div id="cr">
+            <h6>Todos los derechos reservados © 2022 <b>CynthiDev</b></h6>
+        </div>
+    </footer>
+    
+</body>
+</html>

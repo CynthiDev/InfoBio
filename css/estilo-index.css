@@ -1,0 +1,519 @@
+/* font-family: 'DM Sans', sans-serif;     font-family: 'Kalam', cursive;    font-family: 'Satisfy', cursive;*/
+ /* inicio de estilos generales */
+html {
+    scroll-behavior: smooth;    /* el desplazamiento es  suave */
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'DM Sans', sans-serif;
+    background-color: #1D1D1D;    /* color al fondo html */
+    height: auto
+}
+
+/*  TAMAÑO PREDETERMINADO (laptops/desktops, 992px hasta 1279) *
+@media screen and (min-width: 992px) and (max-width: 1279px){...}*/
+h1{
+    font-family: 'Satisfy', cursive;
+    font-weight:200;
+    font-size: 3rem;
+    margin: 2rem 0;  
+    line-height: 2.5rem;
+}
+
+h2{
+    font-size: 2.5em;
+    line-height: 1em;
+}
+h5, h6{
+    font-weight: 100;
+    margin: 0.2rem;
+}
+p{font-size: 0.95rem;}
+
+.img-ajuste-ancho { width: 100%;}
+.img-cover{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;}
+ /* finde estilos generales */
+
+
+header, section, footer {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    height: auto;
+}
+
+.boton1{
+    pointer-events: auto;
+    cursor: pointer;
+    background: #7AB33E;
+    border: none;
+    padding: 1rem 2rem;
+    margin: 1rem 0;
+    font-weight: bold;
+    color: #ffffff;
+    border-radius: 3rem;
+    text-transform: uppercase;
+}
+.boton1:hover{
+    letter-spacing: 0.1rem;
+}
+
+/* inicio animacion */
+.slideinn {
+    animation-duration: 5s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 40%;
+    }
+    to {
+      margin-left: 0%;
+    }
+  }
+/* fin animacion */
+
+
+
+/* inicio  header  */
+.box-header{
+    width: 25rem;
+    margin: 6rem 0;
+    text-align: center;
+}
+header {
+    height: 60px;
+    position: fixed;
+    top: 0px;
+    left: 50%; /* para centrar el fixed  */
+    transform: translateX(-50%); /* para centrar el fixed  */
+    z-index: 100;
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    justify-items: end;
+    align-items: center;  /* place-items: center;      centra horizontal y verticalmente */
+    overflow: hidden;   
+    background-color: #373b388d;
+}
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-left: auto;
+}
+
+     /* inicio bnt responsive */ 
+     .logo { 
+        padding: 0.5rem;
+        box-sizing: border-box;
+        width: 100%;
+    }
+.logoPagina{
+    height: 100%;
+    padding-left: 1rem;
+    box-sizing: border-box;
+}
+     #btn-responsive{
+        grid-area: burguer;
+        height: 50px;
+        background-color: #07463B;
+        padding-right: 1rem;
+        box-sizing: border-box;
+        width: 100%;
+        display: none;
+    }
+  #btn-responsive a{
+      display: block;
+      text-decoration: none;
+      color: #ffffff;
+      font-size: 1.8rem;
+      text-align: end;
+  }
+    /* frin bnt responsive */
+
+
+
+
+#botonera-principal {
+    height: auto;
+    width: 100%;
+    }
+  #btn-header {
+        margin: 0%;
+        padding: 0%;
+        list-style-type: none;
+        display: flex;
+        box-sizing: border-box; /* para que el pading no haga que la caja se agrande */
+    }
+    #btn-header li a {
+        height: 2rem;
+        text-decoration: none;
+        text-shadow: 0.5px 0.5px 1px #000000a8;
+        font-family: 'Poppins', sans-serif;
+        font-size: 0.8rem;
+        padding: 1.5rem;
+        color: #ffffff;
+        transition: all .5s ease;
+    }
+    ul#btn-header li a:hover {
+        color: #FFCD00;
+        text-shadow: none;
+        font-weight: bold;
+        font-size: 1rem;
+    
+    }
+/* fin header */
+
+
+/* inicio seccion home */
+ #home-grid-container{
+    display: grid;
+    grid-template-columns: 2fr 3fr;  /* grid template: filas / columnas */
+    grid-template-rows: auto auto auto;
+    justify-content: center;   /*en Auto, ajusta al tamaño del contenido. Align content centra  verticalmente */ 
+ 
+    grid-template-areas: "tit tit"
+                        "left right"
+                        "footer footer";                           
+}
+
+#home-grid-container div{
+    text-align: center;
+}
+
+#tit-home{
+    grid-area: tit;
+    background-image: url("../img/header.jpg");
+    background-size: cover;     /*   ajusta al ancho o alto de lo que muestra mas img */
+
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    place-content: center;
+    color: #ffffff;
+}
+.boxf, .boxl, .boxr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.boxl{
+    grid-area: left;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column ;
+    align-items: flex-end;
+}
+.boxr{
+    grid-area: right;
+    background-color: #FFFFFF;
+}
+.boxf{
+    grid-area: footer;
+    color: #ffffff;
+    background-image: url(../img/imgmanos.jpg);
+    background-size: cover; 
+}
+
+#nosotros{
+    flex-wrap: wrap;
+    width: 60%;
+}
+#img-home{
+    height: auto;
+    margin: 5% 25%;
+}
+.box-txt-f{
+    margin: 10rem 0;
+}
+/* fin seccion home */
+
+
+/* inicia footer */
+footer{
+  padding: 1rem 0 0;
+  box-sizing: border-box;
+  background-color: #1f2b29;
+  color: #ffffff;
+}
+#container-footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 90%;
+    margin: auto;
+    gap: 3rem; /*espacio entre box*/
+}
+#term{
+    flex-grow: 2.2;    /* define el ancho  en peso  de la caja */
+}
+#contact{
+    flex-grow: 0.8;
+}
+.box-footer .logo2 img{
+    width: 2.4rem;
+    margin-top: 1.33em;
+}
+.box-footer{
+    width: 8rem;
+
+}
+.box-footer h5{
+    margin-bottom: 2.3rem;
+    color: #cdcdcd;
+}
+.box-footer a{
+    color: #bfc8cca5;
+    display: flex;
+    text-decoration: none;
+    margin-bottom: 1rem;
+    line-height: 0.9rem;
+}
+.box-footer a span{
+    width: 20%;
+}
+.box-footer a p{
+    width: 80%;
+    margin: 0;
+    font-size: 0.8rem;
+
+}
+#cr{
+    text-align: center;
+    width: 100%;
+    color: #5f6467;
+    background-color: #161f1d;
+    padding: 0.3rem 0;
+    box-sizing: border-box;
+} /* fin footer */
+
+/*inicio Medianos (landscape tablets, 601px hasta 991) ---------------------------------------------------------*/
+@media screen and (min-width: 601px) and (max-width: 991px){
+p{font-size: 1rem;}
+header, section, footer {
+    width: 100%;
+}
+.box-header{
+    width: 25rem;
+    margin: 5rem 0;
+}
+header {
+    height: 3.5rem;
+    grid-template-columns: 1fr 2fr;
+    justify-items: center;
+}
+    #btn-header li a {
+        font-size: 0.9rem;
+        color: #ffeeb0;
+    }
+ #home-grid-container{grid-template-columns: 3fr 4fr;}
+#nosotros{
+    flex-wrap: wrap;
+    width: 70%;
+    padding-bottom: 1rem;
+    box-sizing: border-box;
+}
+.box-txt-f{margin: 8rem 0;}
+footer{padding: 1rem 0 0 0;}
+#container-footer{max-width: 950%;}
+#term{
+    flex-grow: 2; 
+    padding-left: 2rem;
+    box-sizing: border-box;
+}
+.box-footer .logo2 img{ margin-left: 3rem;}
+.terminos p{font-size: 0.8rem;}
+.box-footer a p{
+    width: 80%;
+    margin: 0;
+    font-size: 0.8rem;
+}
+} /* fin de dispositivos  desde 601 hasta 991px */
+
+
+/* inicio Extra small devices (phones,  hasta 600px ) ----------------------------------------------------------------*/
+@media only screen and (max-width: 600px) {
+    h1{
+        font-size: 4em;
+        margin: 2rem 0;  
+    }
+    p{font-size: 1rem;}
+
+    header, section, footer {
+        width: 100%;
+    }
+      @keyframes slidein {
+        from {margin-left: 20%;}
+        to {margin-left: 0%;}}
+
+    .box-header{ width: 100%;}
+    header {
+        height: auto;
+        top:unset;
+        left:unset;
+        transform: unset;
+        z-index: 100;
+        display: grid;
+        grid-template-columns:1fr 1fr;
+        grid-template-rows: 3rem auto;
+        grid-template-areas: "logo burguer"
+                            "botonera botonera";
+        place-items: center;
+        background-color: #333d36;
+    }
+    .logo { 
+        padding: 0.5rem;
+        box-sizing: border-box;
+        width: 100%;
+        grid-area: logo;
+        background-color: #07463B;
+    }
+.logoPagina{
+    height: 100%;
+    padding-left: 1rem;
+    box-sizing: border-box;
+
+}
+   
+     /* inicio bnt responsive ---------------------*/ 
+     #btn-responsive{
+         grid-area: burguer;
+         height: 50px;
+         background-color: #07463B;
+         padding-right: 1rem;
+         box-sizing: border-box;
+         width: 100%;
+         display: block;
+     }
+   #btn-responsive a{
+       display: block;
+       text-decoration: none;
+       color: #ffffff;
+       font-size: 1.8rem;
+       text-align: end;
+   }
+
+
+     /* fin bnt responsive--------------------------- */
+
+
+    #btn-principal{
+        grid-area: botonera;
+        display: none;
+    }
+      #btn-header {
+          flex-wrap: wrap;
+          height: auto;
+        }
+        #btn-header li{
+            height: 2.5rem;
+            line-height: 2.5rem;
+            width: 100%;
+        }
+        #btn-header li a {
+            height: auto;
+            font-size: 0.9rem;
+            width: 100%;
+            text-align: center;
+            padding: 0 2rem;
+            box-sizing: border-box;
+        }
+        ul#btn-header li a:hover {font-size: 1.1rem;}
+     #home-grid-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;     
+        grid-template-areas: "tit "
+                            "left"
+                            "right"
+                            "footer"; 
+        width: 100%;                          
+    }   
+    .boxl{ align-items: center;}
+    #img-home{
+        height: auto;
+        margin: 5% 25%;
+    }
+    .box-txt-f{
+        margin: 5rem 0;
+        width: 80%;
+        padding: 2rem;
+        box-sizing: border-box;
+    }
+
+.terminos p{font-size: 0.7rem;
+color: #cdcdcd;} 
+
+#container-footer{
+    justify-content:space-between;
+    gap: 1rem 0;
+    
+}
+#term{
+    flex-grow:unset;
+    width: 100%;
+    order: 1;
+    text-align: center;
+}
+#intereses{ order: 3;}
+#sociales{ order: 4;}
+#intereses, #sociales{  width: 45%;}
+#contact{
+    flex-grow:unset;
+    width: 100%;
+    order: 2;
+}
+.box-footer .logo2 img{  margin-top: 0;}
+.box-footer h5{ margin-bottom: 1.5rem;}
+
+#cr{
+    height: 2.5rem;
+    padding: 1rem;
+    box-sizing: border-box;
+} /* fin footer */
+
+
+
+} /* fin de dispositivos hasta 600px */
+
+
+/*  inicio Extra largo (large laptops and desktops, 1280px and up)------------------------------------------------------------ */
+@media screen and (min-width: 1280px) {
+    h1{ font-size: 6.2rem;
+        margin: 3.2rem 0;  
+        line-height: 5rem;
+    }
+    h2{font-size: 3em;}
+    h5, h6{margin: 0.5rem 0 0.1rem 0;}
+    h5{ font-size: 1.1rem; }
+    p{font-size: 1rem;}
+    header, section, footer {width: 1280px;}
+    .boton1{font-size: 1.5rem;}    
+
+    .slideinn {animation-duration: 6s;}
+    .box-header{
+        width: 60%;
+        margin: 6rem 0;
+        text-align: center;
+    }
+        #btn-header li a {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+        }
+    footer{padding: 2rem 0 0; }
+    #container-footer{ gap: 8rem; }
+    #term p{
+        font-size: 0.9rem;
+        color: #cdcdcd;}
+    #contact{flex-grow: 0.8;}
+    #cr{
+        font-size: 1.2rem;
+        color: #515456;
+        padding: 1rem 0;
+    }
+} /* fin de dispositivos mayores de  1280px */
